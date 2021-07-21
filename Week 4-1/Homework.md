@@ -41,8 +41,6 @@ def thing(a):
             k = 0
             if a[y] == a[z]:
                 k = k + 1
-            else:
-                print("test")
             z = z + 1
             
         if k >= 1:
@@ -109,10 +107,9 @@ def majority(a):
             if a[y] == a[z]:
                 k = k + 1
             z = z + 1
-        
+        y = y + 1
             if k > len(a) / 2:
                 print(a[y])
-            
 
 l = [3,2,3]
 print(majority(l))
